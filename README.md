@@ -7,9 +7,9 @@ There are also many aspects of dating, such as how to find potential partners, h
 
 > Given N number of penitential mates in one's life, what is the optimal strategy for selecting a mate such that you end up with the best possible partner.
 
-To make this problem more manageable, I've come up with the following axioms.  However, I encourage considering the ramifications of what a solution would like given different axioms:
+To make this problem more manageable, I've come up with the following axioms.  However, I encourage considering the ramifications of what a solution would look like given different axioms:
 
-* Every relationship can be summed up to a single value, which we'll call one's “compatibility”.
+* Every relationship can be summed up to a single value, which we'll call one's “compatibility value”.
 * You can only be in one relationship at a time.
 * Once one passes on a relationship, there is no going back.
 * We can estimate how many potential relationships one could have in their life (again, not solving the problem of finding partners here).
@@ -18,7 +18,7 @@ To make this problem more manageable, I've come up with the following axioms.  
 Of course these are not an exact representation of the complexities of life, but it's a starting point that allows us to design a simulation, so we can test different algorithms.
 
 ## The Naive Algorithm
-Now, with all that out of the way.  Let's get a baseline of performance.  The simplest algorithm one could imagine is to opt to marry the first person they date.  Since I'm an engineer and not a mathematician, I wrote a program to simulate this (which you can find on my GitHub).  As a quick aside, for the purposes of that program, all partners will be uniformly generated between 0 and 100. However, it should be noted that one should not assume that will be the case in the real world, in fact, I would love if someone could provide information as to what the actual distribution might be.
+With all that out of the way.  Let's get a baseline of performance.  The simplest algorithm one could imagine is to opt to marry the very first person they date.  Since I'm an engineer and not a mathematician, I wrote a program to simulate this (which you can find on my GitHub).  As a quick aside, for the purposes of that program, all potential partner's compatibility value will be uniformly generated between 0 and 100. However, one should not assume that will be the case in the real world, in fact, I would love if someone could provide information as to what the actual distribution might be.
 
 In any event, the programmatic version of this simple algorithm would look like:
 
@@ -36,7 +36,7 @@ And, unsurprisingly, this results in an average spouse value of the average of a
 If you would like to try out this problem by yourself, please do so now before reading the next paragraph that's coming in 3… 2… 1…
 
 ## The Optimal Algorithm
-While I am not a mathematician, my dear father _is_, and after a father-son conversation about what the optimal algorithm for a dating strategy might be, you know normal father-son stuff.  I learned that, amazingly, this is actually a solved problem.  In their paper “Recognizing the maximum of a sequence” John P. Gilbert and Frederick Mosteller call the problem the beauty contest problem, the secretary problem, Googol, or the dowry problem. They say, “Our efforts to discover the originator of this problem have been unsuccessful.”  But, to succinctly explain the actual algorithm, the idea is you skip the first 1/e number of partners then marry the first one, which is better than anyone you've seen so far.  Or, written in code it looks like:
+While I am not a mathematician, my dear father _is_, and after a father-son conversation about what the optimal algorithm for dating might be, you know normal father-son stuff.  I learned that, amazingly, this is actually a solved problem.  In their paper “Recognizing the maximum of a sequence” John P. Gilbert and Frederick Mosteller call the problem the beauty contest problem, the secretary problem, Googol, or the dowry problem. They say, “Our efforts to discover the originator of this problem have been unsuccessful.”  But, to succinctly explain the actual algorithm, the idea is you skip the first 1/e number of partners then marry the first one, which is better than anyone you've seen so far.  Or, written in code it looks like:
 
 ```python
 def dating_strategy(
@@ -69,3 +69,4 @@ The thought of how to optimize dating has been on my mind lately.  While current
 
 Furthermore, I'd like to explicitly state that I appreciate you taking the time to read this blog.  If you found it intriguing, it would be wondrous if you could share it with someone you think might appreciate this approach to partner selection!
 
+(This blog was written with the assistance of a Language Model)
