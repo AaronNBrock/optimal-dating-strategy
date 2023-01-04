@@ -1,7 +1,7 @@
 # An Optimal Dating Strategy
 
 ## Introduction
-Love is complicated. But… so is the weather, and somehow we manage to predict it (albeit with varying degrees of accuracy).  One might postulate, even if only as a thought experiment, what is the optimal strategy for dating such that one is guaranteed the best possible spouse?  Now, before we can start down this path, we must first define the axioms of the problem space.  The dating equivalent of Physic's “Assume a massless frictionless object”.   As well as clearly defining what we're optimizing for, so we have a way of measuring success.
+Love is complicated. But… so is the weather, and somehow we manage to predict it (albeit with varying degrees of accuracy).  One might wonder, even if only as a thought experiment, what is the optimal strategy for dating such that one is guaranteed the best possible spouse?  Now, before we can start down this path, we must first define the axioms of the problem space.  The dating equivalent of Physic's “Assume a massless frictionless object”.   As well as clearly defining what we're optimizing for, so we have a way of measuring success.
 
 There are also many aspects of dating, such as how to find potential partners, how to attract such partners, once in a relationship how to optimize it for one's happiness, etc.  All of which, I believe, are interesting problems in their own right.  But, for the purposes of this post, I want to focus on the issue of selection.  With this in mind, the problem statement I've come up with is:
 
